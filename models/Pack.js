@@ -2,11 +2,13 @@ var Pack = Backbone.Collection.extend({
   model: Card,
 
   initialize: function() {
-    this.listenTo(this.model, 'pick', this.executePick);
+    this.listenTo(this, 'pick', this.executePick);
   },
 
-  executePick: function() {
-
+  executePick: function(card) {
+    console.log('heard in pack');
+    console.log(card);
+    this.remove(card)
   },
 
   url: 'http://api.mtgapi.com/v2/booster/bfz',
