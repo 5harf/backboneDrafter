@@ -6,7 +6,6 @@ var PackView = Backbone.View.extend({
   },
 
   render: function() {
-    console.log('rendered');
     this.$el.empty();
     var nodes = this.collection.map(function(card) {
       return new CardView({model: card}).render();
