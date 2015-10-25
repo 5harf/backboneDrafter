@@ -9,9 +9,15 @@
     <script src="lib/backbone.js"></script>
     <script src="models/Card.js"></script>
     <script src="collections/Pack.js"></script>
+    <script src="collections/Deck.js"></script>
+    <script src="collections/Packs.js"></script>
+    <script src="models/Player.js"></script>
     <script src="views/CardView.js"></script>
+    <script src="views/DeckView.js"></script>
     <script src="views/PackView.js"></script>
+    <script src="views/PlayerView.js"></script>
 
+    <script src="app.js"></script>
 
 
 <script>
@@ -43,11 +49,7 @@
 //     console.error(data);
 //   }
 // });
-var pack = new Pack;
-var PackView = new PackView({
-  collection: pack
-});
-pack.loadPack();
+
 
 </script>
   </body>

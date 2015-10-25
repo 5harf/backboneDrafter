@@ -7,7 +7,6 @@ var Card = Backbone.Model.extend({
   },
 
   pick: function() {
-    console.log('pick triggered');
     this.trigger('pick', this);
   }
   

@@ -6,8 +6,6 @@ var Pack = Backbone.Collection.extend({
   },
 
   executePick: function(card) {
-    console.log('heard in pack');
-    console.log(card);
     this.remove(card)
   },
 
@@ -16,11 +14,9 @@ var Pack = Backbone.Collection.extend({
     this.fetch();
   },
   parse: function(response) {
-    // console.log(response);
     var result = _.map(response, function(card) {
       return {id: card.multiverseid, name: card.name}
     });
-    console.log(result);
     return result;
   }
 

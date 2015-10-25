@@ -1,4 +1,9 @@
 
-.card {
-  float: left;
+span {
+  display: inline-block;
 }
+/*
+span {
+  position: absolute;
+  clear: both;
+}*/

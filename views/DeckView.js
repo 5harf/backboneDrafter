@@ -1,8 +1,7 @@
-var PackView = Backbone.View.extend({
+var DeckView = Backbone.View.extend({
   
   initialize: function() {
-    this.listenTo(this.collection, 'sync', this.render);
-    this.listenTo(this.collection, 'remove', this.render);
+    this.listenTo(this.collection, 'add', this.render);
     this.render();
   },
 
@@ -11,6 +10,7 @@ var PackView = Backbone.View.extend({
     var nodes = this.collection.map(function(card) {
       return new CardView({model: card}).render();
     });
-    return this.$el.html('<h1>Pack</h1>').append(nodes);
+    return this.$el.html('<h1>Deck</h1>').append(nodes);
   }
 })
+
