@@ -6,6 +6,7 @@ var PlayerView = Backbone.View.extend({
     this.deckView = new DeckView({collection: this.deck})
     this.pack.loadPack();
     this.listenTo(this.pack, 'remove', this.addToDeck)
+    this.render();
   },
 
   addToDeck: function(card) {

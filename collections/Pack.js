@@ -7,6 +7,7 @@ var Pack = Backbone.Collection.extend({
 
   executePick: function(card) {
     this.remove(card)
+    this.trigger('pass');
   },
 
   url: 'http://api.mtgapi.com/v2/booster/bfz',
