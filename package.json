@@ -1,0 +1,36 @@
+{
+  "name": "backbonedrafter",
+  "version": "1.0.0",
+  "description": "draft things",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "body-parser": "^1.14.1",
+    "express": "^4.10.2",
+    "http-request": "^0.7.0",
+    "jquery": "^2.1.4",
+    "mime": "^1.3.4",
+    "mongodb": "^2.0.47",
+    "morgan": "^1.6.1",
+    "mysql": "^2.9.0",
+    "request": "^2.65.0",
+    "sequelize": "^3.13.0",
+    "socket.io": "^1.3.7",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5harf/backboneDrafter.git"
+  },
+  "author": "5harf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5harf/backboneDrafter/issues"
+  },
+  "homepage": "https://github.com/5harf/backboneDrafter#readme"
+}

@@ -1,9 +1,6 @@
-
+body {
+  background-color: grey;
+}
 span {
   display: inline-block;
 }
-/*
-span {
-  position: absolute;
-  clear: both;
-}*/

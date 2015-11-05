@@ -1,10 +1,10 @@
 var CardView = Backbone.View.extend({
-  template: _.template('<img class="card" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=<%= id %>&type=card">'),
+  template: _.template('<img class="card" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=<%= multiverseid %>&type=card">'),
 
   el: '<span>',
 
   events: {
-    'click': function() {
+    'dblclick': function() {
       this.model.pick()
     }
   },

@@ -1,13 +1,17 @@
 var Card = Backbone.Model.extend({
-  // url: 'http://api.mtgapi.com/v2/booster/bfz',
-
   defaults: {
-    id: '',
-    name: ''
+    multiverseid: '',
+    cardname: '',
+    PackId: ''
   },
 
   pick: function() {
-    this.trigger('pick', this);
+    if (this.get('PackId') === '') {
+      this.trigger('pick', this);
+    } else {
+      console.log('TRIGGERING SECOND');
+      this.trigger('pickSecond', this);
+    }
   }
   
 
